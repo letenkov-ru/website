@@ -29,27 +29,10 @@ markup:
     noClasses: false
 menu:
   main:
-    - identifier: blog
-      name: Blog
-      pageRef: /blog
-      weight: 1
-    - identifier: work
-      name: Work
-      pageRef: /work
-      weight: 2
     - identifier: about
       name: About
       pageRef: /about
-      weight: 3
-    - name: Search
-      weight: 4
-      params:
-        type: search
-    - name: Telegram
-      weight: 5
-      url: "https://letenkov.t.me"
-      params:
-        icon: telegram
+      weight: 1
   sidebar:
     - identifier: more
       name: More
@@ -60,10 +43,6 @@ menu:
       name: "About"
       pageRef: "/about"
       weight: 2
-    - identifier: resume
-      name: "Resume HH.ru ↗"
-      url: "https://hh.ru"
-      weight: 3
 params:
   navbar:
     displayTitle: true
