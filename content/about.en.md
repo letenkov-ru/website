@@ -23,3 +23,5 @@ My value is situational. I am most effective during transition phases, complex i
 
 > [!NOTE]
 > Details of specific projects are intentionally omitted. I believe professional maturity is best reflected in how a person talks about risks, constraints, and responsibility.
+
+Technical notes and engineering reflections: https://letenkov.io
