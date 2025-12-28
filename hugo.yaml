@@ -28,16 +28,11 @@ markup:
   highlight:
     noClasses: false
 menu:
-  sidebar:
-    - identifier: more
-      name: More
-      params:
-        type: separator
-      weight: 1
+  main:
     - identifier: about
       name: "About"
       pageRef: "/about"
-      weight: 2
+      weight: 1
 params:
   navbar:
     displayTitle: true
