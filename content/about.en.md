@@ -1,5 +1,5 @@
 ---
-title: Обо мне
+title: About
 type: about
 ---
 I am an engineer and platform specialist. Most of my work happens when a system is already running and stops being an experiment, and the project begins to live as a product.
