@@ -53,7 +53,7 @@ params:
   displayUpdatedDate: true
   dateFormat: "2 January 2006"
   search:
-    enable: true
+    enable: false
     type: flexsearch
     flexsearch:
       # index page by: content | summary | heading | title
