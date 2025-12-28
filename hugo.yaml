@@ -30,8 +30,8 @@ markup:
 menu:
   main:
     - identifier: about
-      name: About
-      pageRef: /about
+      name: "About"
+      pageRef: "/about"
       weight: 1
   sidebar:
     - identifier: more
