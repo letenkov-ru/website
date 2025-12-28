@@ -28,7 +28,6 @@ markup:
   highlight:
     noClasses: false
 menu:
-  main:
   sidebar:
     - identifier: more
       name: More
