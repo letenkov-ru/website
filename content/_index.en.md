@@ -36,3 +36,5 @@ My goal is to make the system reproducible, understandable, and maintainable wit
 
 If these situations sound familiar, you can reach out directly. A conversation always starts with understanding the context and the problem.
 
+**Email:** eugene@letenkov.ru  
+**Phone:** +7 901 368-87-07
