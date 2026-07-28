@@ -1,6 +1,6 @@
 # Hugo configuration file
 baseURL: "https://letenkov.ru/"
-title: Letenkov
+title: Евгений Летенков
 enableRobotsTXT: true
 enableGitInfo: true
 hasCJKLanguage: true
@@ -11,16 +11,22 @@ outputs:
 defaultContentLanguage: ru
 languages:
   ru:
-    languageName: Русский
+    label: Русский
     weight: 1
-    title: Летенков
+    title: Евгений Летенков — Platform Engineering, DevOps и Data Platform
+    params:
+      description: "Евгений Летенков — эксперт по Platform Engineering, DevOps, Kubernetes и Data Platform."
+      authorName: "Евгений Летенков"
   en:
-    languageName: English
+    label: English
     weight: 2
-    title: Letenkov
+    title: Evgeny Letenkov — Platform Engineering, DevOps & Data Platform Architect
+    params:
+      description: "Evgeny Letenkov — Platform Engineering, DevOps, Kubernetes and Data Platform expert."
+      authorName: "Evgeny Letenkov"
 module:
   imports:
-    - path: github.com/letenkov-ru/hextra
+    - path: github.com/imfing/hextra
 markup:
   goldmark:
     renderer:
@@ -34,6 +40,35 @@ menu:
       pageRef: "/about"
       weight: 1
 params:
+  description: "Евгений Летенков — эксперт по Platform Engineering, DevOps, Kubernetes и Data Platform."
+  author:
+    name: "Евгений Летенков"
+    givenName: "Евгений"
+    familyName: "Летенков"
+    alternateNames:
+      - "Evgeny Letenkov"
+      - "Eugene Letenkov"
+    jobTitle: "Platform Engineering and DevOps Expert"
+    image: "/images/evgeny-letenkov.jpg"
+    linkedin: "https://www.linkedin.com/in/letenkov"
+    github: "https://github.com/letenkov"
+    knowsAbout:
+      - "Platform Engineering"
+      - "DevOps"
+      - "Site Reliability Engineering"
+      - "Kubernetes"
+      - "Infrastructure as Code"
+      - "Terraform"
+      - "Ansible"
+      - "GitOps"
+      - "CI/CD"
+      - "Observability"
+      - "Data Platform"
+      - "Apache Kafka"
+      - "Apache Airflow"
+      - "Apache Spark"
+      - "Trino"
+      - "Linux"
   navbar:
     displayTitle: true
     displayLogo: false
