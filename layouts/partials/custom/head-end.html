@@ -1,0 +1,36 @@
+{{- $author := .Site.Params.author -}}
+
+{{- if $author -}}
+{{- $sameAs := slice -}}
+
+{{- with $author.linkedin -}}
+  {{- $sameAs = $sameAs | append . -}}
+{{- end -}}
+
+{{- with $author.github -}}
+  {{- $sameAs = $sameAs | append . -}}
+{{- end -}}
+
+{{- $schema := dict
+  "@context" "https://schema.org"
+  "@type" "Person"
+  "@id" (printf "%s#person" .Site.BaseURL)
+  "name" $author.name
+  "givenName" $author.givenName
+  "familyName" $author.familyName
+  "alternateName" $author.alternateNames
+  "url" .Site.BaseURL
+  "jobTitle" $author.jobTitle
+  "description" .Site.Params.description
+  "sameAs" $sameAs
+  "knowsAbout" $author.knowsAbout
+-}}
+
+{{- with $author.image -}}
+  {{- $schema = merge $schema (dict "image" (absURL .)) -}}
+{{- end -}}
+
+<script type="application/ld+json">
+{{ $schema | jsonify | safeJS }}
+</script>
+{{- end -}}
